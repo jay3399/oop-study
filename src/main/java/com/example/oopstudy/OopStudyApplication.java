@@ -1,5 +1,6 @@
 package com.example.oopstudy;
 
+import java.io.IOException;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -9,8 +10,18 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class OopStudyApplication {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		SpringApplication.run(OopStudyApplication.class, args);
+
+		final BankTransactionAnalyzerSimple bankTransactionAnalyzerSimple = new BankTransactionAnalyzerSimple();
+
+		final BankStatementParser bankStatementParser = new BankStatementCSVParser();
+
+		bankTransactionAnalyzerSimple.analyze(args[0], bankStatementParser);
+
+
+
+
 	}
 
 }
