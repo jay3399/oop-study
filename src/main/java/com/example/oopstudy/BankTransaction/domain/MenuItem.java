@@ -1,8 +1,5 @@
-package com.example.oopstudy.domain;
+package com.example.oopstudy.BankTransaction.domain;
 
-
-import lombok.Data;
-import lombok.Getter;
 
 public class MenuItem {
 

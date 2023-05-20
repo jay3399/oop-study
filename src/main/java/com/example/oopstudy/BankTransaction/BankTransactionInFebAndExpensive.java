@@ -1,7 +1,6 @@
-package com.example.oopstudy;
+package com.example.oopstudy.BankTransaction;
 
-import com.example.oopstudy.BankTransactionFilter;
-import com.example.oopstudy.domain.BankTransaction;
+import com.example.oopstudy.BankTransaction.domain.BankTransaction;
 import java.time.Month;
 
 public class BankTransactionInFebAndExpensive implements BankTransactionFilter {

@@ -1,6 +1,6 @@
-package com.example.oopstudy;
+package com.example.oopstudy.BankTransaction;
 
-import com.example.oopstudy.domain.BankTransaction;
+import com.example.oopstudy.BankTransaction.domain.BankTransaction;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -22,9 +22,6 @@ public class BankStatementCSVParser implements BankStatementParser {
   public BankTransaction parseFrom(final String line) {
 
     final String[] columns = line.split(",");
-
-
-
 
     final LocalDate date = LocalDate.parse(columns[0], DATE_PATTERN);
 

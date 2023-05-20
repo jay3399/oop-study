@@ -1,13 +1,12 @@
 package com.example.oopstudy;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
 
-import com.example.oopstudy.domain.BankTransaction;
+import com.example.oopstudy.BankTransaction.BankStatementCSVParser;
+import com.example.oopstudy.BankTransaction.BankStatementParser;
+import com.example.oopstudy.BankTransaction.domain.BankTransaction;
 import java.time.LocalDate;
 import java.time.Month;
-import org.assertj.core.api.Assert;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 class BankStatementCSVParserTest {

@@ -1,6 +1,6 @@
-package com.example.oopstudy;
+package com.example.oopstudy.BankTransaction;
 
-import com.example.oopstudy.domain.SummaryStatistics;
+import com.example.oopstudy.BankTransaction.domain.SummaryStatistics;
 
 public class HtmlExporter implements Exporter {
 

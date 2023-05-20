@@ -1,4 +1,4 @@
-package com.example.oopstudy.domain;
+package com.example.oopstudy.BankTransaction.domain;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,7 +1,6 @@
-package com.example.oopstudy;
+package com.example.oopstudy.BankTransaction;
 
-import com.example.oopstudy.domain.BankTransaction;
-import com.example.oopstudy.domain.SummaryStatistics;
+import com.example.oopstudy.BankTransaction.domain.BankTransaction;
 import java.time.Month;
 import java.util.ArrayList;
 import java.util.List;
@@ -37,7 +36,11 @@ public class BankStatementProcessor {
   }
 
 
-
+  /**
+   *  특정 필터구현에 의존하지않는다
+   *  기존 메서드 바디를 바꿀필요없이 , 새로운 구현 인수를 전달한다
+   *  -> 변경없이 , 확장성은 개방된다
+   */
 
   public List<BankTransaction> findTransaction(final BankTransactionFilter bankTransactionFilter) {
 

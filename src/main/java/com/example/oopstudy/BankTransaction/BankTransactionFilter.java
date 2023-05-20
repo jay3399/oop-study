@@ -1,6 +1,6 @@
-package com.example.oopstudy;
+package com.example.oopstudy.BankTransaction;
 
-import com.example.oopstudy.domain.BankTransaction;
+import com.example.oopstudy.BankTransaction.domain.BankTransaction;
 
 
 @FunctionalInterface
