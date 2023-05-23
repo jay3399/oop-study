@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 
 
 /**
- * 도메인 클래스
+ * 도메인 클래스 , 반복되는 복사붙여넣기작업 -> 도메인클래스의 필요성 , 등장
  */
 public class TextFile {
 
