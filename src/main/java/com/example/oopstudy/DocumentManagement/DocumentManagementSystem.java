@@ -16,7 +16,6 @@ public class DocumentManagementSystem {
 
   private final List<Document> documents = new ArrayList<>();
 
-
   public void importFile(String path) throws IOException {
 
     final File file = new File(path);
@@ -26,8 +25,6 @@ public class DocumentManagementSystem {
     }
 
     final int separatorIndex = path.lastIndexOf('.');
-
-
 
     if (separatorIndex != -1) {
       if (separatorIndex == path.length()) {
@@ -44,7 +41,7 @@ public class DocumentManagementSystem {
       final Document document = importer.importFile(file);
 
       documents.add(document);
-    } else{
+    } else {
       throw new UnknownFormatConversionException("No extension" + path);
     }
 

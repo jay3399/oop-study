@@ -36,10 +36,12 @@ public class OopStudyApplication {
 
 		businessRuleEngine.addAction(
 				facts1 -> {
-					var jobTitle = facts.getFact("jobTitle");
+					var jobTitle = facts1.getFact("jobTitle");
 					System.out.println("jobTitle = " + jobTitle);
 				}
 		);
+
+
 
 		businessRuleEngine.addAction(
 				facts1 ->{
@@ -56,10 +58,9 @@ public class OopStudyApplication {
 					} else if (dealStage == Stage.CLOSED) {
 						forecastedAmount = amount;
 					}
-					facts.addFacts("forecastedAmount", String.valueOf(forecastedAmount));
+					facts1.addFacts("forecastedAmount", String.valueOf(forecastedAmount));
 				}
 		);
-
 
 		businessRuleEngine.addAction(
 				facts1 -> {

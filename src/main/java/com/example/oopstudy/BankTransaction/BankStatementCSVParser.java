@@ -34,6 +34,13 @@ public class BankStatementCSVParser implements BankStatementParser {
 
   }
 
+  /**
+   * Processor -> 라인파싱메세지전달 to Parser->  Parser 는 파싱책임을 갖고 자율적으로 파싱메서드를 실행 = Parser.parseLinesFrom
+   * Processor 는 날짜 가격 설명만을 반환받으면 된다.
+   * BankTransaction 이란 날짜/가격/설명을 갖고있는 캡슐화된 객체를 만들고 ,Parser 는 그것을 반환한다.
+   * @param lines
+   * @return
+   */
 
   public List<BankTransaction> parseLinesFrom(final List<String> lines) {
 
